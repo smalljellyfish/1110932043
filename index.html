@@ -5,16 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>水母是世界第一</title>
 	<style type="text/css">
-		.size {
+		.size1 {
 			font-size: 30px;
-			height: 200px;
 		}
-		img{
-			position: absolute;
+		
+		.tot{
+			float: right;
 			clear: both;
 		}
-		.right{
-			float: right ;
+		.pt{
+			float:right;
+			clear: both;
 		}
 		.sp{
 			margin: 10px ;
@@ -25,31 +26,29 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
-<body>
-	<!--<img src="https://i.imgur.com/GZAUmwS.png" class="rounded float-start">-->
-	<div class="size">
-		<center>
-			<div class="container">
-				<div class="row">
-					<div class="col-auto">
-						
-					</div>
-					<div class="col-5">
-						班級:資工二甲<br>
-						姓名:林廷魁<br>
-						學號:1110932043<br>
-					</div>
-					<div class="right">
-						<span class="badge badge-danger">我婆</span>
-						<img src="https://i.imgur.com/GZAUmwS.png" class="rounded float-start">
-						
-					</div>
-				</div>	
+<body style="background-image: url()">
+		<div class="container">
+			<div class="row col-8 size1" style="position: relative; display: inline-block;">
+				<div>
+					班級:資工二甲
+				</div>
+				<div>
+					姓名:林廷魁
+				</div>
+				<div>
+					學號:1110932043
+				</div>
 			</div>
-		</center>
-	</div>
+			<div class="tot size1" style="display: inline;">
+				<span class="badge badge-danger ">我婆</span>
+				<img src="https://i.imgur.com/GZAUmwS.png" width="150" height="150">
+			</div>
+			<div class="pt">
+				
+			</div>	
+		</div>
 	<hr>
-		<div class="size ">
+		<div class="size1">
 			<div class="overflow-auto" class="float-sm-right">
 				<div class="sp">
 					<a href="homework1.html" button type="button" class="btn-warning rounded btn-lg" class="float-right" >作業一</a><br>
@@ -77,5 +76,9 @@
 				</div>
 			</div>
 		</div>
+		<div class="d-flex" style="position:absolute; bottom: 100px;">
+  			<strong>Loading...</strong>
+  			<div class="spinner-border ml-auto" role="status" aria-hidden="true">
+  		</div>
 </body>
 </html>
