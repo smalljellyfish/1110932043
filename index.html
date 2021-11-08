@@ -3,12 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>水母是世界第一</title>
+	<title>我是水母他是水母這裡還有沒有第三隻水母</title>
 	<style type="text/css">
 		.size1 {
 			font-size: 30px;
 		}
-		
+		.word{
+			font-size: 30px;
+			color:#00F0F0;
+		}
 		.tot{
 			float: right;
 			clear: both;
@@ -18,7 +21,26 @@
 			clear: both;
 		}
 		.sp{
-			margin: 10px ;
+			margin: 30px ;
+
+		}
+		.bg1{
+			background-image:url(背景.jpg);
+			width: 400px;
+			height: 60px;
+			border: 1px #rgb(255, 255, 255) solid;
+		}
+		.ft{
+			float: left;
+			position: relative;
+			display: inline-block;
+		}
+		.mask{
+			opacity:20%;
+		}
+		body{  			
+  			background-image: url("背景.jpg");
+            /*opacity: 50%;*/
 		}
 	</style>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -26,59 +48,56 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
-<body style="background-image: url()">
-		<div class="container">
-			<div class="row col-8 size1" style="position: relative; display: inline-block;">
-				<div>
-					班級:資工二甲
-				</div>
-				<div>
-					姓名:林廷魁
-				</div>
-				<div>
-					學號:1110932043
-				</div>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 ft word">
+				<span class="badge badge-danger ">我</span>
+				<img src="jellyfish.jpg" style="width: 150px; height: 150px; bottom: 10px;">
 			</div>
-			<div class="tot size1" style="display: inline;">
+			<div class="col-lg-4 word ft"> 
+				班級:資工二甲<br>
+				姓名:林廷魁<br>
+				學號:1110932043
+			</div>
+			<div class="col-lg-4 tot size1 ft" style="display: inline;">
 				<span class="badge badge-danger ">我婆</span>
 				<img src="https://i.imgur.com/GZAUmwS.png" width="150" height="150">
-			</div>
-			<div class="pt">
-				
 			</div>	
 		</div>
-	<hr>
-		<div class="size1">
-			<div class="overflow-auto" class="float-sm-right">
-				<div class="sp">
-					<a href="homework1.html" button type="button" class="btn-warning rounded btn-lg" class="float-right" >作業一</a><br>
-				</div>
-				<div class="sp">
-					<a href="homework2.html" button type="botton" class="btn-danger rounded btn-lg" class="float-right" >作業二</a><br>
-				</div>
-				<div class="sp">
-					<a href="homework3.html" button type="botton" class="btn-dark rounded btn-lg" class="float-right" >作業三</a><br>
-				</div>
-				<div class="sp">
-					<a href="" button type="botton" class="btn-secondary rounded btn-lg" class="float-right" >作業四</a><br>
-				</div>
-				<div class="sp">
-					<a href="" button type="botton" class="btn-secondary rounded btn-lg" class="float-right" >作業五</a><br>
-				</div>
-				<div class="sp">
-					<a href="" button type="botton" class="btn-secondary rounded btn-lg" class="float-right" >作業六</a><br>
-				</div>
-				<div class="sp">
-					<a href="" button type="botton" class="btn-secondary rounded btn-lg" class="float-right" >作業七</a><br>
-				</div>
-				<div class="sp">
-					<a href="" button type="botton" class="btn-secondary rounded btn-lg" class="float-right" >作業八</a><br>
-				</div>
+	</div>
+<hr>
+	<div class="size1">
+		<div class="overflow-auto float-left">
+			<div class="sp">
+				<a href="homework1.html" button type="button" class="btn-warning rounded btn-lg" class="float-right" >作業一</a>
+			</div>
+			<div class="sp">
+				<a href="homework2.html" button type="botton" class="btn-danger rounded btn-lg" class="float-right" >作業二</a>
+			</div>
+			<div class="sp">
+				<a href="homework3.html" button type="botton" class="btn-dark rounded btn-lg" class="float-right" >作業三</a>
+			</div>
+			<div class="sp">
+				<a href="" button type="botton" class="btn-secondary rounded btn-lg" class="float-right" >作業四</a>
+			</div>
+			<div class="sp">
+				<a href="" button type="botton" class="btn-secondary rounded btn-lg" class="float-right" >作業五</a>
+			</div>
+			<div class="sp">
+				<a href="" button type="botton" class="btn-secondary rounded btn-lg" class="float-right" >作業六</a>
+			</div>
+			<div class="sp">
+				<a href="" button type="botton" class="btn-secondary rounded btn-lg" class="float-right" >作業七</a>
+			</div>
+			<div class="sp">
+				<a href="" button type="botton" class="btn-secondary rounded btn-lg" class="float-right" >作業八</a>
 			</div>
 		</div>
-		<div class="d-flex" style="position:absolute; bottom: 100px;">
-  			<strong>Loading...</strong>
-  			<div class="spinner-border ml-auto" role="status" aria-hidden="true">
-  		</div>
+	</div>
+	<div class="d-flex" style="position:absolute; bottom: 100px;">
+  		<strong>Loading...</strong>
+  		<div class="spinner-border ml-auto" role="status" aria-hidden="true">
+  	</div>
 </body>
 </html>
