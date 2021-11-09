@@ -7,14 +7,20 @@
 	<style type="text/css">
 		.size1 {
 			font-size: 30px;
+			font-family:Microsoft JhengHei;
+		}
+		.size2{
+			font-size: 50px;
+			color: #00F0F0;
+			text-shadow: 3px 3px 3px #BA55D3;
+			font-family:Microsoft JhengHei;
 		}
 		.word{
 			font-size: 30px;
 			color:#00F0F0;
-		}
-		.tot{
-			float: right;
-			clear: both;
+			font-weight:bold;
+			font-family:DFKai-sb;
+			text-shadow:3px 3px 3px #BA55D3;
 		}
 		.pt{
 			float:right;
@@ -22,27 +28,124 @@
 		}
 		.sp{
 			margin: 30px ;
-
-		}
-		.bg1{
-			background-image:url(https://i.imgur.com/Su7dIMW.jpg);
-			width: 400px;
-			height: 60px;
-			border: 1px #rgb(255, 255, 255) solid;
+			display: inline;
 		}
 		.ft{
 			float: left;
 			position: relative;
 			display: inline-block;
 		}
-		.mask{
-			opacity:20%;
-		}
 		body{  			
-  			background-image: url("https://i.imgur.com/pFLzv3c.jpg");
-            		/*opacity: 50%;*/
-           		background-repeat: no-repeat;
-          		background-size: cover;
+  			background-image: url("https://i.imgur.com/6E3Y9q9.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-position: center;
+            /*background: rgba(0, 0, 0, 0.1);*/
+		}
+		.pic{
+			width:180px; height:180px;overflow:hidden;
+		}
+		.pic img{
+			transform:scale(1,1);transition: all 0.5s ease-out;
+		}
+		.pic img:hover{
+			transform:scale(1.2,1.2);
+		}
+		.sd:hover{
+			box-shadow: 5px 5px 2px #BA55D3;
+		}
+		.center{
+			margin: 20px auto;
+		}
+		.of{
+			height: 100px;
+			overflow-x: auto;
+		}
+		/*圖片輪轉*/
+		.coverflow{
+			margin: 0 auto;
+			width: 400px;
+			height: 400px;
+			position: relative;
+			overflow: hidden;
+			border: 50px solid;
+			border-color:;
+			border-bottom-width: 100px;
+			background-color: #BA55D3;
+			box-shadow: 3px 3px 5px #BA55D3;
+		}
+		.coverflow>a{
+    		display: block;
+    		position: absolute;
+    		top:0;
+    		left:0;
+    		opacity: 0;
+    		filter: alpha(opacity=0);
+			/*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
+ 			-webkit-animation: silder 25s linear infinite;
+ 			animation: silder 25s linear infinite;
+		}
+		.coverflow>a>img{
+    		max-width: 100%;
+		}
+		/*動畫關鍵影格*/
+		/*@-webkit-keyframes silder {
+    		3% {
+        		opacity: 1;
+        		filter: alpha(opacity=100);
+    		}
+    		27% {
+        		opacity: 1;
+        		filter: alpha(opacity=100);
+    		}
+    		30% {
+        		opacity: 0;
+        		filter: alpha(opacity=0);
+    		}
+		}*/
+		@keyframes silder {
+    		3% {
+        		opacity: 1;
+        		filter: alpha(opacity=100);
+    		}
+    		27% {
+        		opacity: 1;
+        		filter: alpha(opacity=100);
+    		}
+    		30% {
+        		opacity: 0;
+        		filter: alpha(opacity=0);
+    		}
+		}
+		/*每個圖片各延遲5秒*/
+		.coverflow>a:nth-child(5) {
+    		-webkit-animation-delay: 20s;
+            animation-delay: 20s;
+        }
+		.coverflow>a:nth-child(4) {
+    		-webkit-animation-delay: 15s;
+            animation-delay: 15s; 
+        }
+		.coverflow>a:nth-child(3) {
+    		-webkit-animation-delay: 10s;
+            animation-delay: 10s;               
+		}
+		.coverflow>a:nth-child(2) {
+    		-webkit-animation-delay: 5s;
+            animation-delay: 5s;
+		}
+		.coverflow>a:nth-child(1) {
+    		-webkit-animation-delay: 0s;
+            animation-delay: 0s;    
+		}
+		/*滑入時停止播放*/
+		.coverflow:hover>a{
+			-webkit-animation-play-state: paused;
+        	animation-play-state: paused;
+		}
+		/*鼠標*/
+		html{
+			cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1155.ani),url(https://ani.cursors-4u.net/cursors/cur-13/cur1155.png), auto !important;
 		}
 	</style>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -53,53 +156,61 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-4 ft word">
+			<div class="col-lg-4 ft size1 pic">
 				<span class="badge badge-danger ">我</span>
-				<img src="https://i.imgur.com/gcUUTTn.jpg" style="width: 150px; height: 150px; bottom: 10px;">
+				<img src="https://i.imgur.com/gcUUTTn.jpg" style="width: 150px; height: 150px; bottom: 10px;" class="sd">
 			</div>
 			<div class="col-lg-4 word ft"> 
 				班級:資工二甲<br>
 				姓名:林廷魁<br>
 				學號:1110932043
 			</div>
-			<div class="col-lg-4 tot size1 ft" style="display: inline;">
+			<div class="col-lg-4 pt size1 ft pic" style="display: inline;">
 				<span class="badge badge-danger ">我婆</span>
-				<img src="https://i.imgur.com/GZAUmwS.png" width="150" height="150">
+				<img src="https://i.imgur.com/GZAUmwS.png" width="150" height="150" class="sd">
 			</div>	
 		</div>
 	</div>
 <hr>
-	<div class="size1">
-		<div class="overflow-auto float-left">
-			<div class="sp">
-				<a href="homework1.html" button type="button" class="btn-warning rounded btn-lg" class="float-right" >作業一</a>
+	<div class="container">
+		<div class="row">
+			<div class="col-2 ft center">
+				<a href="homework1.html" button type="botton" class="btn btn-outline-warning rounded btn-lg" class="" >作業一</a>
 			</div>
-			<div class="sp">
-				<a href="homework2.html" button type="botton" class="btn-danger rounded btn-lg" class="float-right" >作業二</a>
+			<div class="col-2 ft center">
+				<a href="homework2.html" button type="botton" class="btn btn-outline-warning rounded btn-lg" class="" >作業二</a>
 			</div>
-			<div class="sp">
-				<a href="homework3.html" button type="botton" class="btn-dark rounded btn-lg" class="float-right" >作業三</a>
+			<div class="col-2 ft center">
+				<a href="homework3.html" button type="botton" class="btn btn-outline-warning rounded btn-lg" class="" >作業三</a>
 			</div>
-			<div class="sp">
-				<a href="" button type="botton" class="btn-secondary rounded btn-lg" class="float-right" >作業四</a>
+			<div class="col-2 ft center">
+				<a href="https://www.youtube.com/watch?v=tN_U8wFnbaA" button type="botton" class="btn btn-outline-warning rounded btn-lg" class="" >作業四</a>
 			</div>
-			<div class="sp">
-				<a href="" button type="botton" class="btn-secondary rounded btn-lg" class="float-right" >作業五</a>
+			<div class="col-2 ft center">
+				<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" button type="botton" class="btn btn-outline-warning rounded btn-lg" class="" >作業五</a>
 			</div>
-			<div class="sp">
-				<a href="" button type="botton" class="btn-secondary rounded btn-lg" class="float-right" >作業六</a>
+			<div class="col-2 ft center">
+				<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" button type="botton" class="btn btn-outline-warning rounded btn-lg" class="" >作業六</a>
 			</div>
-			<div class="sp">
-				<a href="" button type="botton" class="btn-secondary rounded btn-lg" class="float-right" >作業七</a>
+			<div class="col-2 ft">
+				<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQhttps://www.youtube.com/watch?v=dQw4w9WgXcQ" button type="botton" class="btn btn-outline-warning rounded btn-lg" class="" >作業七</a>
 			</div>
-			<div class="sp" style="">
-				<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" button type="botton" class="btn-secondary rounded btn-lg" class="float-right" >作業八</a>
+			<div class="col-2 ft">
+				<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" button type="botton" class="btn btn-outline-warning rounded btn-lg" class="" >作業八</a>
 			</div>
 		</div>
 	</div>
-	<div class="d-flex" style="position:absolute; bottom: 100px;">
-  		<strong>Loading...</strong>
-  		<div class="spinner-border ml-auto" role="status" aria-hidden="true">
+<hr>
+	<div class="d-flex col-8" style="position:absolute;">
+  		<strong class="size2">我就愛讓它轉,無限loding</strong>
+  		<div class="spinner-border ml-auto" role="status" aria-hidden="true" style="width: 3rem;height: 3rem; color:#00F0F0;">
   	</div>
+	<div id="cover" class="coverflow ">
+    	<a><img src='https://i.imgur.com/PsVoVYo.jpg' alt='pure css3 slider ' ></a>
+    	<a><img src='https://i.imgur.com/URdIeZd.jpg' alt='pure css3 slider ' ></a>
+    	<a><img src='https://i.imgur.com/Rpv5JiZ.jpg' alt='pure css3 slider ' ></a>
+    	<a><img src='https://i.imgur.com/jQqvO0E.png' alt='pure css3 slider ' ></a>
+    	<a><img src='https://i.imgur.com/8uH3pdp.png' alt='pure css3 slider ' ></a>
+	</div>
 </body>
 </html>
