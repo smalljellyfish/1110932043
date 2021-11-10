@@ -89,7 +89,7 @@
     		max-width: 100%;
 		}
 		/*動畫關鍵影格*/
-		/*@-webkit-keyframes silder {
+		@-webkit keyframes silder {
     		3% {
         		opacity: 1;
         		filter: alpha(opacity=100);
@@ -102,7 +102,7 @@
         		opacity: 0;
         		filter: alpha(opacity=0);
     		}
-		}*/
+		}
 		@keyframes silder {
     		3% {
         		opacity: 1;
@@ -147,6 +147,26 @@
 		html{
 			cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1155.ani),url(https://ani.cursors-4u.net/cursors/cur-13/cur1155.png), auto !important;
 		}
+		/*旋轉漂浮的臉*/
+		.ky{
+			bottom: 30%;
+			color: #00F0F0;
+			size: 200px;
+			position: absolute;
+			animation-name: ky;
+  			animation-duration: 5s;
+  			animation-timing-function: linear;
+  			animation-delay: 2s;
+  			animation-iteration-count: infinite;
+  			animation-direction: alternate;
+		}
+		@keyframes ky {
+			0%{color:#00F0F0 ; left:0px; top: 0px;transform: rotate(0deg);}
+			25%{color: #FF00FF;transform: rotate(360deg);}
+			50%{color: #00F0F0;transform: rotate(720deg);}
+			75%{color: #FF00FF;transform: rotate(1080deg);}
+			100%{color: #00F0F0; left: 500px;top: 0px;transform: rotate(1440deg);}
+		}
 	</style>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -171,7 +191,7 @@
 			</div>	
 		</div>
 	</div>
-<hr>
+<hr style="color: #00F0F0;">
 	<div class="container">
 		<div class="row">
 			<div class="col-2 ft center">
@@ -200,17 +220,26 @@
 			</div>
 		</div>
 	</div>
-<hr>
-	<div class="d-flex col-8" style="position:absolute;">
-  		<strong class="size2">我就愛讓它轉,無限loding..</strong>
-  		<div class="spinner-border ml-auto" role="status" aria-hidden="true" style="width: 3rem;height: 3rem; color:#00F0F0;">
-  	</div>
-	<div id="cover" class="coverflow ">
-    	<a><img src='https://i.imgur.com/PsVoVYo.jpg' alt='pure css3 slider ' ></a>
-    	<a><img src='https://i.imgur.com/URdIeZd.jpg' alt='pure css3 slider ' ></a>
-    	<a><img src='https://i.imgur.com/Rpv5JiZ.jpg' alt='pure css3 slider ' ></a>
-    	<a><img src='https://i.imgur.com/jQqvO0E.png' alt='pure css3 slider ' ></a>
-    	<a><img src='https://i.imgur.com/8uH3pdp.png' alt='pure css3 slider ' ></a>
+<hr style="color: #00F0F0;">
+	<div class="container">
+		<div class="row">
+			<div class="d-flex col-8" style="position:absolute;">
+  				<strong class="size2">我就愛讓它轉,無限loding</strong>
+  				<div class="spinner-border ml-auto" role="status" aria-hidden="true" style="width: 3rem;height: 3rem; color:#00F0F0;">
+  			</div>
+			<div id="cover" class="coverflow">
+    			<a><img src='https://i.imgur.com/PsVoVYo.jpg' alt='pure css3 slider ' ></a>
+    			<a><img src='https://i.imgur.com/URdIeZd.jpg' alt='pure css3 slider ' ></a>
+    			<a><img src='https://i.imgur.com/Rpv5JiZ.jpg' alt='pure css3 slider ' ></a>
+    			<a><img src='https://i.imgur.com/jQqvO0E.png' alt='pure css3 slider ' ></a>
+    			<a><img src='https://i.imgur.com/8uH3pdp.png' alt='pure css3 slider ' ></a>
+			</div>
+		</div>
 	</div>
+<footer>
+	<div class="col-md-1 ky">
+		\(°▽°)//
+	</div>
+</footer>
 </body>
 </html>
