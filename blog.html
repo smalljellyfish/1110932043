@@ -8,46 +8,48 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <style type="text/css">
-    header{
-      width: 100%;
-      height: 5%;
-      margin: 0 auto;
-      font-size: 2.5rem;
-      background:rgb(0,246,255,0.2);
-    }
-    nav{
-      width: 75%;
-      height: 5%;
-      margin: 0 auto;
-      background-color:rgba(0,0,0,0);
-    }
-    h6{
-      display: inline-block;
-    }
-  </style>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
-  <header>
-      水母
-  </header>
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item"><a href="#">Library</a></li>
-      <li class="breadcrumb-item active">Data</li>
-    </ol>
+<header class="navbar navbar-expand-lg navbar-dark bg-info">
+  <a class="navbar-brand" href="#" style="font-weight: bold;"><i class="fas fa-rss"></i>水母</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="https://smalljellyfish.github.io/1110932043/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.youtube.com/watch?v=dQ_d_VKrFgM">Link</a>
+      </li>
+    </ul>
+  </div>
+</header>
+<div class="container">
+  <nav class="col-7 pl-0">
+        <ol class="breadcrumb bg-white">
+          <li class="breadcrumb-item"><a href="https://smalljellyfish.github.io/1110932043/">Home</a></li>
+          <li class="breadcrumb-item"><a href="https://www.youtube.com/watch?v=dQ_d_VKrFgM">Library</a></li>
+          <li class="breadcrumb-item active">Data</li>
+        </ol>
   </nav>
-  
-  <div class="container">
-    <div class="row">
-      <div class="col-7 p-0">
-        <h1 style="font-weight: bold;">水母的標題</h1>
-        <h6>作者:水母</h6><i class="fa-light fa-clock-five"></i><h6>2021-11-23</h6><h6>jellyfish</h6>
-      </div>
+
+  <div class="container-fluid">   
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-info" style="font-weight: bold;">水母的標題</h1>
+      <small>
+        <i class="fas fa-user text-info px-1">作者:水母</i>
+        <i class="far fa-clock text-info px-1">2021-11-23</i>
+        <i class="fas fa-tag text-info px-1">jellyfish</i>
+      </small>
     </div>
-    <div class="row">
-      <div class="col-7" style="background-color: rgba(0,0,1,0.1);">
+  </div>
+  <div class="row">
+    <div class="col-lg-7 col-sm-12"> 
+      <div class="bg-light border py-2 px-3">
         <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -58,33 +60,97 @@
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         </div><br>
-        <p>  ‧ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            </p>
-        <p>  ‧ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            </p>
-        <p>  ‧ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            </p>
-        <p>  ‧ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            </p>
-        <p>  ‧ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            </p>
-
+        <ul>
+          <li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            </li>
+          <li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            </li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            </li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            </li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            </li>
+        </ul>
+        <img src="https://i.imgur.com/NUM0adL.jpg" class="img-fluid">
+        <div class="card">
+          <div class="card-header">
+              留言區
+          </div>
+          <div class="card-body">
+            <div class="media">
+              <img src="https://i.imgur.com/vU4zCIH.png" class="align-self-center" style="width: 60px;height: 60px;">
+              <div class="media-body">
+                <h5 class="mt-0">你的留言</h5>
+                <form>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">留言內容</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="內容">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="media">
+              <img src="https://i.imgur.com/BjwdXMG.png" class="align-self-center" style="width: 60px;height: 60px;">
+              <div class="media-body">
+                <h5 class="mt-0">某使用者留言</h5>
+                <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+              </div>
+            </div>
+            <div class="media">
+              <img src="https://i.imgur.com/YzSve5k.png" class="align-self-center" style="width: 60px;height: 60px;">
+              <div class="media-body">
+                <h5 class="mt-0">另一個使用者留言</h5>
+                <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-5" style="background-color: rgba(0,0,1,0.1); display: inline;">
-        <h2>Tags</h2>
-
+    </div>
+    <div class="col-lg-5 col-sm-12">
+      <div class="bg-light border p-3">
+        <h2>Tag</h2>
+          <div>
+          <a class="badge badge-info text-white">badge</a>
+          <a class="badge badge-info text-white">badge</a>
+          <a class="badge badge-info text-white">badge</a>
+          <a class="badge badge-info text-white">badge</a>
+          <a class="badge badge-info text-white">badge</a>
+          <a class="badge badge-info text-white">badge</a>
+          <a class="badge badge-info text-white">badge</a>
+          <a class="badge badge-info text-white">badge</a>
+          <a class="badge badge-info text-white">badge</a>
+          <a class="badge badge-info text-white">badge</a>
+          <a class="badge badge-info text-white">badge</a>
+          <a class="badge badge-info text-white">badge</a>
+          <a class="badge badge-info text-white">badge</a>
+          <a class="badge badge-info text-white">badge</a>
+          <a class="badge badge-info text-white">badge</a>
+          <a class="badge badge-info text-white">badge</a>
+          <a class="badge badge-info text-white">badge</a>
+          <a class="badge badge-info text-white">badge</a>
+          </div>
       </div>
     </div>
   </div>
+</div>
+<div class="bg-light p-3 mt-2">
+  <div class="container justify-content-between d-flex">
+    <div>版權警告!!!</div>
+  </div>
+  <i class="fab fa-line"></i>
+  <i class="fab fa-facebook-square"></i>
+</div> 
 </body>
 </html>
