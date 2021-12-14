@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style type="text/css">
+		span{
+			display: inline-block;
+			width: 15px;
+			text-align:right;
+		}
+	</style>
+</head>
+<body style="font-size:20px">
+	<center>
+		<a href="index.html ">回首頁</a>
+	</center>	
+	<table border="1" align="center" width="300">
+		<tr>
+			<td colspan="300">
+				<p>九九乘法表(進階版)</p>
+			</td>
+		</tr>
+		<script>
+			for(i=1;i<=9;i++)
+			{
+				if(i%3==1)
+				{
+					document.write("<tr>");
+				}document.write("<td>");
+				for(j=1;j<=9;j++)
+				{
+					document.write(i+"*"+j+"=<span>"+i*j+"</span><br>");
+				}
+				document.write("</td>");
+				if(i%3==1)
+				{
+					document.write("</td>");
+				}
+			}
+		</script>
+	</table>
+</body>
+</html>
