@@ -161,7 +161,7 @@
 			bottom: 30%;
 			color: #00F0F0;
 			size: 200px;
-			position: absolute;
+			position: relative;
 			animation-name: ky;
   			animation-duration: 5s;
   			animation-timing-function: linear;
